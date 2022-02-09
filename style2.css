@@ -1,0 +1,76 @@
+.header{
+    display: grid;
+    place-items: center;
+    
+}
+.banner img {
+    margin: auto;
+    width: 75%;
+}
+
+.banner{
+    max-width: 100%; 
+  display: flex; 
+  height: auto ;
+    border: 1px black solid;
+    
+}
+.navbar{
+    margin-top: -17px;
+    display: flex;
+  
+}
+li , a {
+
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+}
+ul{
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 20% 10%; */
+    list-style: none;
+    padding: 0px;
+}
+.container{
+    padding-left: 400px;
+    padding-right: 400px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "article article image1 image2"
+    "image3 image4 image5 image6 "
+    ;
+    row-gap: 50px;
+    column-gap: 20px;
+}
+.article{
+    grid-area: article;
+    background-color: aqua;
+}
+.image1{
+    grid-area: image1;
+}
+.image2{
+    grid-area: image2;
+}
+.image3{
+    grid-area: image3;
+}
+.image4{
+    grid-area: image4;
+}
+.image5{
+    grid-area: image5;
+}
+.image6{
+    grid-area: image6;
+}
+.container img {
+    width: 150px;
+    margin-bottom: 20px;
+}
